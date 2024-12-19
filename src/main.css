@@ -1,0 +1,141 @@
+/* Reset de estilo básico 
+Decidi mudar a cor de tudo kkkkkkk*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navegação */
+.l-nav {
+    background-color: #4CAF50;
+    padding: 1rem;
+    text-align: center;
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav__link:hover {
+    background-color: #45a049;
+}
+
+/* Seções principais */
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5rem;
+}
+
+/* Cards de pratos */
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card p {
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-weight: bold;
+    color: #4CAF50;
+    font-size: 1.2rem;
+}
+
+/* Botões */
+.actions {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.btn-pedir,
+.btn-diminuir {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-diminuir {
+    background-color: #ff4d4d;
+}
+
+.btn-pedir:hover {
+    background-color: #45a049;
+}
+
+.btn-diminuir:hover {
+    background-color: #e63939;
+}
+
+/* Contador */
+.contador {
+    font-weight: bold;
+    color: #000;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: sticky;
+    bottom: 0;
+    font-size: 1.2rem;
+}
+
+.rodape span {
+    font-weight: bold;
+}

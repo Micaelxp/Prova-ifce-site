@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/main.css">
+    <title>Cardápio do Restaurante</title>
+</head>
+
+<body>
+    <nav class="l-nav">
+        <ul class="nav__list">
+            <li><a href="#principais" class="nav__link">Pratos Principais</a></li>
+            <li><a href="#sobremesas" class="nav__link">Sobremesas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="principais" class="c-principais">
+            <h2>Pratos Principais</h2>
+
+            <div class="card">
+                <h3>Filet au poivre</h3>
+                <p>O filé au poivre é uma receita francesa que consiste em medalhões de filé mignon cobertos com um
+                    molho com grãos de pimenta.</p>
+                <p class="price">R$ 99,00</p>
+                <div class="actions">
+                    <button class="btn-diminuir" data-preco="99" data-nome="Filet au poivre">Diminuir</button>
+                    <button class="btn-pedir" data-preco="99" data-nome="Filet au poivre">Pedir (<span
+                            class="contador">0</span>x pedidos)</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobremesas" class="c-sobremesas">
+            <h2>Sobremesas</h2>
+
+            <div class="card">
+                <h3>Polvo ao Arroz Negro</h3>
+                <p>Prato com arroz negro e polvo grelhado.</p>
+                <p class="price">R$ 120,00</p>
+                <div class="actions">
+                    <button class="btn-diminuir" data-preco="120" data-nome="Polvo ao Arroz Negro">Diminuir</button>
+                    <button class="btn-pedir" data-preco="120" data-nome="Polvo ao Arroz Negro">Pedir (<span
+                            class="contador">0</span>x pedidos)</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Mil folhas com frutas vermelhas</h3>
+                <p>Camadas de massa folhada crocante com creme pâtissier e frutas vermelhas frescas.</p>
+                <p class="price">R$ 50,00</p>
+                <div class="actions">
+                    <button class="btn-diminuir" data-preco="50" data-nome="Mil folhas com frutas vermelhas">Diminuir</button>
+                    <button class="btn-pedir" data-preco="50" data-nome="Mil folhas com frutas vermelhas">Pedir (<span
+                            class="contador">0</span>x pedidos)</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Soufflé de Chocolate</h3>
+                <p>Uma sobremesa leve e aerada com coração de ganache.</p>
+                <p class="price">R$ 30,00</p>
+                <div class="actions">
+                    <button class="btn-diminuir" data-preco="30" data-nome="Soufflé de Chocolate">Diminuir</button>
+                    <button class="btn-pedir" data-preco="30" data-nome="Soufflé de Chocolate">Pedir (<span
+                            class="contador">0</span>x pedidos)</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        Valor Total da Comanda: <span id="total-comanda">R$ 0,00</span>
+    </footer>
+
+    <script src="src/index.js" type="module"></script>
+</body>
+
+</html>
